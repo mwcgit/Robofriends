@@ -1,15 +1,23 @@
 {
   "name": "robofriends",
+  "homepage": "https://mwcgit.github.io/robofriends",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
     "react-scripts": "^3.4.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
     "tachyons": "^4.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
